@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Facebook UI Demo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div id="header">
+
+        <div id="logo">facebook</div>
+
+        <div id="login-area">
+
+            <div class="login-field">
+                <label>Email/Phone</label>
+                <input type="text" id="login-email">
+            </div>
+
+            <div class="login-field">
+                <label>Password</label>
+                <input type="password" id="login-password">
+            </div>
+
+            <button type="button" id="login-button">
+                Login
+            </button>
+
+            <div id="forgot-link">
+                <a href="#">Forgotten account?</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- MAIN CONTAINER -->
+    <div id="main-container">
+
+        <!-- LEFT SIDE -->
+        <div id="left-container">
+
+            <div id="tagline">
+                Facebook helps you connect and share with the people in your life
+            </div>
+
+            <div id="world-map">
+                <img src="world-map.jpeg" alt="Network illustration">
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div id="right-container">
+
+            <div id="signup-header">
+                Create an account
+            </div>
+
+            <div id="signup-sub">
+                It's quick and easy.
+            </div>
+
+
+            <!-- SIGNUP FORM -->
+            <form id="signup-form" novalidate>
+
+                <div class="name-row">
+
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="firstname"
+                            name="firstname"
+                            placeholder="First Name"
+                        >
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="lastname"
+                            name="lastname"
+                            placeholder="Last Name"
+                        >
+                        <span class="error-msg"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="field-group">
+
+                    <input
+                        type="text"
+                        id="contact"
+                        name="emailaddress"
+                        placeholder="Mobile Number or Email Address"
+                    >
+
+                    <span class="error-msg"></span>
+
+                </div>
+
+
+                <div class="field-group">
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="New Password"
+                    >
+
+                    <span class="error-msg"></span>
+
+                </div>
+
+
+                <!-- DATE OF BIRTH -->
+                <div class="dob-title">
+                    Date Of Birth
+                </div>
+
+                <div class="dob-row">
+
+                    <select id="day" name="day">
+                        <option value="">DAY</option>
+
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <select id="month" name="month">
+                        <option value="">MONTH</option>
+
+                        <option value="1">JAN</option>
+                        <option value="2">FEB</option>
+                        <option value="3">MAR</option>
+                    </select>
+
+                    <input
+                        type="number"
+                        id="year"
+                        name="year"
+                        placeholder="YEAR"
+                    >
+
+                </div>
+
+                <span id="dob-error" class="error-msg"></span>
+
+
+                <!-- GENDER -->
+                <div class="gender-title">
+                    Gender
+                </div>
+
+                <div class="gender-row">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="female"
+                        >
+                        Female
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="male"
+                        >
+                        Male
+                    </label>
+
+                </div>
+
+                <span id="gender-error" class="error-msg"></span>
+
+
+                <!-- TERMS -->
+                <div id="terms-text">
+                    By clicking Sign Up, you agree to our Terms,
+                    Data Policy and Cookie Policy.
+                </div>
+
+
+                <!-- BUTTON -->
+                <div class="button-row">
+
+                    <button type="submit" id="create-btn">
+                        Create An Account
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
